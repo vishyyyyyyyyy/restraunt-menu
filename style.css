@@ -1,25 +1,43 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-align: center;
   background-color: FFC7D5;
 }
 
+header {
+  position: relative;
+  height: 100vh; 
+  display: flex;
+  overflow: hidden; 
+}
 
+nav {
+  font-family: "GFS Neohellenic", serif;
+  font-weight:700;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
 
-h1{
+h1{ 
+  position:fixed;
   font-family: "Jua", sans-serif;
   color: #FFCCD8;
-  width: 102.875rem;
-  text-shadow: 0 0px 60px #FB6F92, 0 0 60px #FB6F92;
+  width: auto;
+  text-shadow: 0 0 0.5em #ff527d, 0 0 0.8em #ff527d;
   font-family: Jua;
-  font-size: 12.5rem;
+  font-size: 5vw;
   font-weight: 400;
   text-align: center;
   position: absolute;
   top:50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 body{
