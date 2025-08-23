@@ -14,7 +14,7 @@ body {
 /* Header full-screen */
 header {
   position: relative;
-  height: 100vh;           /* full viewport height */
+  height: 100vh;/* full viewport height */
   width: 100%;
   overflow: hidden;        
 }
@@ -42,6 +42,7 @@ nav a:hover {
   color: #FFE5EC;
 }
 
+/* clouds */
 .cloud {
   position: absolute;
   width: 17%;
@@ -74,6 +75,7 @@ nav a:hover {
   left: 82%;
 }
 
+/* hearts */
 .heart {
   position: absolute;
   width: 5%;
@@ -123,11 +125,12 @@ nav a:hover {
 
 #header-img {
   position: absolute;
-  width: 20%;
+  width: 15%;
   height: auto;
-  top: 50%;
-  left: 50%;
+  top: 15%;
+  left: 15%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 /* Main title centered */
@@ -149,11 +152,30 @@ h1 {
 /* Tagline below h1 */
 #tagline {
   position: absolute;
-  top: 60%; 
+  top: 57%; 
   left: 50%;
   transform: translateX(-50%);
   font-weight: 700;
   font-size: 2rem;
   color: #FB6F92;
   text-align: center;
+}
+
+
+ .steps {
+  width: 8rem;         /* size of the box */
+  padding: 1rem;
+  background-color: #FB6F92; /* pink background */
+  border-radius: 1rem; /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;        /* text color */
+}
+
+.steps img {
+  width: 4rem;         /* resize images */
+  height: auto;
+  margin-bottom: 0.5rem;
 }
