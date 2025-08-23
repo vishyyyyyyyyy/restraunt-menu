@@ -7,6 +7,8 @@
 body {
   font-family: "GFS Neohellenic", serif;
   background-color: #FFCCD8;
+  font-weight: 700;
+  color: #FB6F92;
 }
 
 /* Header full-screen */
@@ -42,24 +44,82 @@ nav a:hover {
 
 .cloud {
   position: absolute;
-  width: 15%;
+  width: 17%;
   height: auto;
 }
 
-#cloud1 {
-  top: 10%;
-  left: 5%;
-}
 
 #cloud2 {
-  top: 20%;
-  right: 10%;
+  top: 75%;
+  right: 7%;
 }
 
 #cloud3 {
   bottom: 10%;
-  left: 15%;
+  left: 9%;
 }
+
+#cloud4 {
+  top: 30%;
+  left: 55%;
+}
+
+#cloud5 {
+  top: 15% ;
+  left: 1%;
+}
+
+#cloud6 {
+  top: 2%;
+  left: 82%;
+}
+
+.heart {
+  position: absolute;
+  width: 5%;
+  height: auto;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+#heart1 {
+  top: 55%;
+  right: 5%;
+}
+
+#heart2 {
+  bottom: 2%;
+  left: 9%;
+}
+
+#heart3 {
+  top: 33%;
+  left: 47%;
+}
+
+#heart4 {
+  top: 45%;
+  left: 4%;
+}
+
+#heart5 {
+  top: 20%;
+  left: 75%
+}
+
+#heart6 {
+  bottom: 14%;
+  left: 60%;
+}
+
+#heart7 {
+  top: 10%;
+  left: 23%;
+}
+
 
 #header-img {
   position: absolute;
@@ -73,6 +133,7 @@ nav a:hover {
 /* Main title centered */
 h1 {
   position: absolute;
+  white-space: nowrap;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
