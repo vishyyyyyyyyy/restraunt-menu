@@ -11,6 +11,17 @@ body {
   color: #FB6F92;
 }
 
+#arrow {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 3.5%;   
+  left: 8%;  
+  z-index: 3;
+  transition: transform 0.1s linear;
+}
+
+
 /* Header full-screen */
 header {
   position: relative;
@@ -146,7 +157,7 @@ h1 {
   color: #FFCCD8;
   text-align: center;
   text-shadow: 0 0 0.3em #ff527d, 0 0 0.6em #ff527d;
-  z-index: 2;  
+  z-index: 4;  
 }
 
 /* Tagline below h1 */
@@ -161,12 +172,16 @@ h1 {
   text-align: center;
 }
 
+
+
 #guide {
+  padding-top:7rem;
   font-size: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  z-index: 4;
+
 }
 
 .steps {
@@ -184,10 +199,10 @@ h1 {
     height: auto;
   }
 
-.food-section {
-   margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  .food-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
