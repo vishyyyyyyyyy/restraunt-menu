@@ -205,6 +205,7 @@
 }
 
 #menu {
+  padding-top: 4rem;
   font-size: 5rem;
   text-align: center;
 }
@@ -214,7 +215,7 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .food-item {
@@ -233,7 +234,7 @@
 
 .food-item:hover {
   background-color: #FFD7E2;
-  border: 5px solid #FE84A2;
+  border: 10px solid #FE84A2;
 }
 
 .food {
@@ -257,4 +258,23 @@
 .food-item em {
    display: block;  
   padding-top: 1rem;
+}
+
+#order-section {
+  padding-top: 5rem; 
+  text-align: center;
+}
+
+#order-form {
+  font-size: 4rem;  
+}
+
+form {
+  margin-top: 3rem;         
+  padding: 1.5rem;           
+  width: 20rem;              
+  background-color: #FFB3C6; 
+  border-radius: 20px;      
+  margin-left: auto;         
+  margin-right: auto;
 }
