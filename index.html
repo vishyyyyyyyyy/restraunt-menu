@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="style.css"> 
     <!-- fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@700&family=Jua&display=swap" rel="stylesheet"> 
-</head>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <body>
     <img src="arrow.png" alt="arrow" id="arrow">
     <header>
         <nav>
-            <a href = #guide id ="guidebutton"> guide </a>
-            <a href = #menu> menu </a>
-            <a href = #order-form> order</a>
+            <a href = #guide id ="guidebutton"> Guide </a>
+            <a href = #menu> Menu </a>
+            <a href = #order-form> Order </a>
         </nav>
         
         <img src="bow.png" alt="bow" id="header-img">
@@ -47,7 +45,7 @@
 
     <main>
         <div id="guide">
-            <h2>how it works</h2>
+            <h2>How It Works</h2>
             <img src="how it works images.png" alt="how it works" id="how-it-works">
 
             <div class = "steps">
@@ -58,57 +56,82 @@
         </div>
 
         <div class = "food-section">
-        <h2 id = "menu">menu</h2>
+        <h2 id = "menu">Menu</h2>
 
             <div class= "food-container">
 
             <article class = "food-item">
                 <img src = "dish 1.png" alt=" pasta" id="pasta-img" class ="food">
-                <h3>pasta amor</h3>
-                <p>creamy spaghetti with parmesan<br> and a touch of love. <br> <em>$12 </em> </p>
+                <h3>Pasta Amor</h3>
+                <p>creamy spaghetti with<br>parmesan and a touch of love. <br> <em>$12 </em> </p>
             </article>
 
            <article class = "food-item">
                 <img src = "dish 2.png" alt="burger" id="burger-img" class ="food">
-                <h3>love burger</h3>
-                <p>Juicy burger with cheese, fresh veggies & romance. <br> <em>$10 </em></p>
+                <h3>Love Burger</h3>
+                <p>juicy burger with cheese, fresh veggies & romance. <br> <em>$10 </em></p>
             </article>
 
             <article class = "food-item">
                 <img src = "dish 3.png" alt="taco" id="taco-img" class ="food">
-                <h3>besito taco</h3>
-                <p>soft tortillas with seasoned meat,<br> salsa & a kiss of lime. <br> <em>$8 </em></p>
+                <h3>Besito Taco</h3>
+                <p>soft tortillas with meat, <br> salsa & a kiss of lime. <br> <em>$8 </em></p>
             </article>
             </div>
 
         </div>
 
         <div id="order-section">
-            <h2 id = "order-form">place your order</h2> 
+            <h2 id = "order-form">Place Your Order</h2> 
             <form><!--add label stuffs here later-->
+                <div id ="name-input">
+                <label> Name: <input type = "text" placeholder="Enter your name" minlength="1"> </label> <br>
+                </div>
+                <div id ="dishes-input">
+                <h2> Dishes </h2>
+                <h3> Enter the number of love-filled dishes you will share:</h3>
                 <input type="number" placeholder="Enter quantity"> <br>
-                <input type = "radio" name="food" value="food1"> Food 1
-                <input type = "radio" name="food" value="food2"> Food 2
-                <input type = "radio" name="food" value="food3"> Food 3
-                <input type = "checkbox"><br>
+                </div>
+
+                <div id ="food-input">
+                <input type = "radio" name="food" value="food1"> Pasta Amor
+                <input type = "radio" name="food" value="food2"> Love Burger
+                <input type = "radio" name="food" value="food3"> Besito Taco <br>
+                </div>
+
+                <h2> Drinks </h2>
+                <input type = "checkbox" name="drink" value="drink1"> Sweetheart Soda
+                <input type = "checkbox" name="drink" value="drink2"> Sparkling Crush
+                <input type = "checkbox" name="drink" value="drink3"> Lover's Lemonade <br>
+
+                <h2>Love Level</h2>
+                <h3>Choose your dose of delicious affection:</h3>
+
+                <input type = "range" name="love-level" min="1" max="10"> <br>
+                <div id="love-level-labels">
+                <h5>Puppy Eyes</h5>
+                <h5>Smitten</h5>
+                <h5>head over heels</h5>
+                </div>
+
+                <h2>Special Requests</h2>
 
                 <textarea></textarea><br>
 
-                <input type = "submit" value="Submit Order">
+                <input type = "submit" value="go to checkout">
                 </form>
         
             </div>
             
             
-            <div>
-
-
+            
 
             <footer>
                 <p> made with love by <a href="https://www.codedex.io/@vishyyyyyyyyy" target="_blank">vishyyyyyyyyy</a></p>
             </footer>
-            
-        </div>
+        
+
+
     </main>
    
     <script src="script.js"></script>
