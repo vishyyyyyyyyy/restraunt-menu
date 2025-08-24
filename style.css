@@ -5,9 +5,9 @@
   }
 
   body {
-    font-family: "GFS Neohellenic", serif;
+    font-family: "jua", sans-serif;
     background-color: #FFCCD8;
-    font-weight: 700;
+
     color: #FB6F92;
   }
 
@@ -37,11 +37,11 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 4rem;
+    gap: 6rem;
   }
 
   nav a {
-    font-weight: 700;
+
     font-size: 2rem;
     color: #FB6F92;
     text-decoration: none;
@@ -165,8 +165,9 @@
     position: absolute;
     top: 57%; 
     left: 50%;
+    font-family: "jua", sans-serif;
     transform: translateX(-50%);
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2rem;
     color: #FB6F92;
     text-align: center;
@@ -178,6 +179,7 @@
   #guide {
     padding-top: 10rem;
     font-size: 3rem;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,6 +210,7 @@
   padding-top: 4rem;
   font-size: 5rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .food-container {
@@ -215,7 +218,7 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .food-item {
@@ -266,13 +269,15 @@
 }
 
 #order-form {
+  margin-top: 5rem;
   font-size: 4rem;  
 }
 
 form {
   margin-top: 3rem;         
-  padding: 1.5rem;           
-  width: 20rem;              
+  padding: 2rem;           
+  width: 30rem;    
+  height: 40rem;          
   background-color: #FFB3C6; 
   border-radius: 20px;      
   margin-left: auto;         
