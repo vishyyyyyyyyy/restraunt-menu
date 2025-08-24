@@ -1,208 +1,248 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: "GFS Neohellenic", serif;
-  background-color: #FFCCD8;
-  font-weight: 700;
-  color: #FB6F92;
-}
+  body {
+    font-family: "GFS Neohellenic", serif;
+    background-color: #FFCCD8;
+    font-weight: 700;
+    color: #FB6F92;
+  }
 
-#arrow {
-  position: absolute;
-  width: 15%;
-  height: auto;
-  top: 3.5%;   
-  left: 8%;  
-  z-index: 3;
-  transition: transform 0.1s linear;
-}
-
-
-/* Header full-screen */
-header {
-  position: relative;
-  height: 100vh;/* full viewport height */
-  width: 100%;
-  overflow: hidden;        
-}
+  #arrow {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 3.5%;   
+    left: 8%;  
+    z-index: 2;
+    transition: transform 0.1s linear;
+  }
 
 
-nav {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 4rem;
-}
-
-nav a {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #FB6F92;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #FFE5EC;
-}
-
-/* clouds */
-.cloud {
-  position: absolute;
-  width: 17%;
-  height: auto;
-}
+  /* Header full-screen */
+  header {
+    position: relative;
+    height: 100vh;/* full viewport height */
+    width: 100%;
+    overflow: hidden;        
+  }
 
 
-#cloud2 {
-  top: 75%;
-  right: 7%;
-}
+  nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4rem;
+  }
 
-#cloud3 {
-  bottom: 10%;
-  left: 9%;
-}
+  nav a {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FB6F92;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.3s;
+  }
 
-#cloud4 {
-  top: 30%;
-  left: 55%;
-}
+  nav a:hover {
+    color: #FFE5EC;
+  }
 
-#cloud5 {
-  top: 15% ;
-  left: 1%;
-}
-
-#cloud6 {
-  top: 2%;
-  left: 82%;
-}
-
-/* hearts */
-.heart {
-  position: absolute;
-  width: 5%;
-  height: auto;
-}
-
-.heart:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s;
-}
-
-#heart1 {
-  top: 55%;
-  right: 5%;
-}
-
-#heart2 {
-  bottom: 2%;
-  left: 9%;
-}
-
-#heart3 {
-  top: 33%;
-  left: 47%;
-}
-
-#heart4 {
-  top: 45%;
-  left: 4%;
-}
-
-#heart5 {
-  top: 20%;
-  left: 75%
-}
-
-#heart6 {
-  bottom: 14%;
-  left: 60%;
-}
-
-#heart7 {
-  top: 10%;
-  left: 25%;
-}
-
-
-#header-img {
-  position: absolute;
-  width: 15%;
-  height: auto;
-  top: 15%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-/* Main title centered */
-h1 {
-  position: absolute;
-  white-space: nowrap;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Jua", sans-serif;
-  font-size: 7rem;
-  font-weight: 400;
-  color: #FFCCD8;
-  text-align: center;
-  text-shadow: 0 0 0.3em #ff527d, 0 0 0.6em #ff527d;
-  z-index: 4;  
-}
-
-/* Tagline below h1 */
-#tagline {
-  position: absolute;
-  top: 57%; 
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 700;
-  font-size: 2rem;
-  color: #FB6F92;
-  text-align: center;
-}
-
-
-
-#guide {
-  padding-top:7rem;
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 4;
-
-}
-
-.steps {
-  display: flex;            
-  justify-content: center;  
-  gap: 18rem;              
-  flex-wrap: wrap;         
-   margin: 0;                
-  font-size: 2rem;   
-}
-
-
-#how-it-works {
-    width: 90%;
+  /* clouds */
+  .cloud {
+    position: absolute;
+    width: 17%;
     height: auto;
   }
 
-  .food-section {
-    margin-top: 5rem;
+
+  #cloud2 {
+    top: 75%;
+    right: 7%;
+  }
+
+  #cloud3 {
+    bottom: 10%;
+    left: 9%;
+  }
+
+  #cloud4 {
+    top: 30%;
+    left: 55%;
+  }
+
+  #cloud5 {
+    top: 15% ;
+    left: 1%;
+  }
+
+  #cloud6 {
+    top: 2%;
+    left: 82%;
+  }
+
+  /* hearts */
+  .heart {
+    position: absolute;
+    width: 5%;
+    height: auto;
+  }
+
+  .heart:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+
+  #heart1 {
+    top: 55%;
+    right: 5%;
+  }
+
+  #heart2 {
+    bottom: 2%;
+    left: 9%;
+  }
+
+  #heart3 {
+    top: 33%;
+    left: 47%;
+  }
+
+  #heart4 {
+    top: 45%;
+    left: 4%;
+  }
+
+  #heart5 {
+    top: 20%;
+    left: 75%
+  }
+
+  #heart6 {
+    bottom: 14%;
+    left: 60%;
+  }
+
+  #heart7 {
+    top: 10%;
+    left: 25%;
+  }
+
+
+  #header-img {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  /* Main title centered */
+  h1 {
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Jua", sans-serif;
+    font-size: 7rem;
+    font-weight: 400;
+    color: #FFCCD8;
+    text-align: center;
+    text-shadow: 0 0 0.3em #ff527d, 0 0 0.6em #ff527d;
+    z-index: 3;  
+  }
+
+  /* Tagline below h1 */
+  #tagline {
+    position: absolute;
+    top: 57%; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FB6F92;
+    text-align: center;
+    z-index: 1;
+  }
+
+
+
+  #guide {
+    padding-top: 10rem;
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    z-index: 4;
+
   }
+
+  .steps {
+    display: flex;            
+    justify-content: center;  
+    gap: 18rem;              
+    flex-wrap: wrap;         
+    margin: 0;                
+    font-size: 2rem;   
+  }
+
+
+  #how-it-works {
+      width: 90%;
+      height: auto;
+    }
+
+  .food-section {
+  padding-top: 10rem;
+}
+
+#menu {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.food-container {
+  display: flex;          
+  justify-content: center; 
+  gap: 2rem;              
+  flex-wrap: wrap;        
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #FFB3C6;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 20em;    
+  height: 20em;   
+  gap: 5rem    
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.food {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.food-item h3 {
+  font-size: 2rem;
+  color: #FB6F92;
+  margin: 1rem 0;
+}
+
+.food-item:hover{
+  background-color: #FFD7E2;
+  border: 10px solid #FE84A2;
