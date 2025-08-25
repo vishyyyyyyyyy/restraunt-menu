@@ -95,19 +95,23 @@
                 <div id ="dishes-input">
                 <h2> Dishes </h2>
                 <h3> Enter the number of love-filled dishes you will share:</h3>
-                <input type="number" placeholder="Enter quantity"> <br>
-                <input type = "radio" name="food" value="food1"> Pasta Amor
-                <input type = "radio" name="food" value="food2"> Love Burger
-                <input type = "radio" name="food" value="food3"> Besito Taco <br>
+                <div id="dish-labels">
+               <label> Pasta Amor <input type = "number" name="food1" min="0" placeholder="Enter quantity"></label>
+               <label> Love Burger <input type = "number" name="food2" min="0" placeholder="Enter quantity"></label>
+               <label> Besito Taco <input type = "number" name="food3" min="0" placeholder="Enter quantity"></label>
+                </div>
                 </div>
 
                 <!--choose drinks-->
+                <div id="drinks-input">
                 <h2> Drinks </h2>
-                <input type = "checkbox" name="drink" value="drink1"> Sweetheart Soda
-                <input type = "checkbox" name="drink" value="drink2"> Sparkling Crush
-                <input type = "checkbox" name="drink" value="drink3"> Lover's Lemonade <br>
+                <label> Sweetheart Soda <input type = "checkbox" name="drink" value="drink1"></label>
+                <label> Sparkling Crush <input type = "checkbox" name="drink" value="drink2"></label>
+                <label> Lover's Lemonade <input type = "checkbox" name="drink" value="drink3"></label>
+                </div>
                 
                  <!--choose love levels-->
+                 <div id="love-level-input">
                 <h2>Love Level</h2>
                 <h3>Choose your dose of delicious affection:</h3>
 
@@ -117,14 +121,17 @@
                 <h5>Smitten</h5>
                 <h5>head over heels</h5>
                 </div>
+                </div>
                 
                  <!--text area-->
+                 <div id="special-requests-input">
                 <h2>Special Requests</h2>
 
                 <textarea></textarea><br>
 
                 <input type = "submit" value="go to checkout">
-                </form>
+                 </form>
+                 </div>
         
             </div>
             

@@ -10,7 +10,7 @@
 
     color: #FB6F92;
   }
-
+  /* HEADER */
   #arrow {
     position: absolute;
     width: 15%;
@@ -178,7 +178,7 @@ nav a {
   }
 
 
-
+/* HOW TO SECTION*/
   #guide {
     padding-top: 10rem;
     font-size: 3rem;
@@ -209,6 +209,7 @@ nav a {
   padding-top: 10rem;
 }
 
+/* MENU */
 #menu {
   padding-top: 4rem;
   font-size: 5rem;
@@ -266,6 +267,8 @@ nav a {
   padding-top: 1rem;
 }
 
+/* ORDER SECTION*/
+
 #order-section {
   padding-top: 5rem; 
   text-align: center;
@@ -317,5 +320,29 @@ form {
 #name-input input:focus {
   background-color: #FFF0F5;
   border: 5px solid #FB6F92;  
+}
+
+#dishes-input {
+  padding-top: 2rem;
+}
+
+#dishes-input h2{
+  font-size:2rem;
+}
+
+#dishes-input h3{
+  padding-top: 0.5rem;
+}
+
+#drinks-input {
+  padding-top: 2rem;
+}
+
+#love-level-input {
+  padding-top: 2rem;
+}
+
+#special-requests-input {
+  padding-top: 2rem;
 }
 
