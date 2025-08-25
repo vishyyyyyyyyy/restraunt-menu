@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
 <body>
     <img src="arrow.png" alt="arrow" id="arrow">
+    
     <header>
         <nav>
             <a href = #guide id ="guidebutton"> Guide </a>
@@ -83,27 +85,29 @@
 
         <div id="order-section">
             <h2 id = "order-form">Place Your Order</h2> 
-            <form><!--add label stuffs here later-->
+            <form>
+                <!--enter name-->
                 <div id ="name-input">
                 <label> Name: <input type = "text" placeholder="Enter your name" minlength="1"> </label> <br>
                 </div>
+                
+                 <!--choosing main dish-->
                 <div id ="dishes-input">
                 <h2> Dishes </h2>
                 <h3> Enter the number of love-filled dishes you will share:</h3>
                 <input type="number" placeholder="Enter quantity"> <br>
-                </div>
-
-                <div id ="food-input">
                 <input type = "radio" name="food" value="food1"> Pasta Amor
                 <input type = "radio" name="food" value="food2"> Love Burger
                 <input type = "radio" name="food" value="food3"> Besito Taco <br>
                 </div>
 
+                <!--choose drinks-->
                 <h2> Drinks </h2>
                 <input type = "checkbox" name="drink" value="drink1"> Sweetheart Soda
                 <input type = "checkbox" name="drink" value="drink2"> Sparkling Crush
                 <input type = "checkbox" name="drink" value="drink3"> Lover's Lemonade <br>
-
+                
+                 <!--choose love levels-->
                 <h2>Love Level</h2>
                 <h3>Choose your dose of delicious affection:</h3>
 
@@ -113,7 +117,8 @@
                 <h5>Smitten</h5>
                 <h5>head over heels</h5>
                 </div>
-
+                
+                 <!--text area-->
                 <h2>Special Requests</h2>
 
                 <textarea></textarea><br>
@@ -133,7 +138,7 @@
 
 
     </main>
-   
+    <!--link javascript-->
     <script src="script.js"></script>
 
 
