@@ -290,59 +290,96 @@ form {
   margin-right: auto;
 }
 
-#name-input {
-  font-size: 2rem;
+/* Common row for inputs */
+.inputs-row {
   display: flex;
-  justify-content: center; 
-  align-items: center;    
-  gap: 0.5rem;            
-}
-#name-input::placeholder {
-  color: #FB6F92;
+  gap: 1.5rem;             
+  justify-content: center;  
+  flex-wrap: wrap;          
+  padding-top: 1rem;
 }
 
-#name-input input::-webkit-input-placeholder {
-  color: #FB6F92;
+/* Name input */
+#name-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
 #name-input input {
-  padding: 0.5rem 1rem;      
-  border-radius: 2rem;        
-  background-color: #FFE5EC;  
-  border: 5px solid #FFE5EC;  
-  font-size: 1.5rem; 
-  font-family: "Jua", sans-serif;          
-  color: #FB6F92;        
-  outline: none;           
-  transition: all 0.3s ease;  
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #FFE5EC;
+  border: 5px solid #FFE5EC;
+  font-size: 1.5rem;
+  font-family: "Jua", sans-serif;
+  color: #FB6F92;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#name-input input::placeholder {
+  color: #FB6F92;
+  opacity: 0.6;
 }
 
 #name-input input:focus {
   background-color: #FFF0F5;
-  border: 5px solid #FB6F92;  
+  border: 5px solid #FB6F92;
 }
 
-#dishes-input {
-  padding-top: 2rem;
+/* Dishes and drinks inputs */
+#dishes-input input[type="number"],
+#drinks-input input[type="checkbox"] {
+  width: 5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 3px solid #FFE5EC;
+  background-color: #FFE5EC;
+  font-family: "Jua", sans-serif;
+  color: #FB6F92;
+  outline: none;
 }
 
-#dishes-input h2{
-  font-size:2rem;
+/* Love level slider labels */
+#love-level-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
 }
 
-#dishes-input h3{
-  padding-top: 0.5rem;
+/* Special Requests */
+#special-requests-input textarea {
+  width: 90%;
+  height: 6rem;
+  border-radius: 1.5rem;
+  border: 3px solid #FFE5EC;
+  background-color: #FFE5EC;
+  padding: 1rem;
+  color: #FB6F92;
+  font-family: "Jua", sans-serif;
+  font-size: 1rem;
+  outline: none;
 }
 
-#drinks-input {
-  padding-top: 2rem;
+/* Submit button */
+form input[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #FB6F92;
+  color: #FFE5EC;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-#love-level-input {
-  padding-top: 2rem;
+form input[type="submit"]:hover {
+  background-color: #FFB3C6;
+  color: #FB6F92;
 }
-
-#special-requests-input {
-  padding-top: 2rem;
-}
-
