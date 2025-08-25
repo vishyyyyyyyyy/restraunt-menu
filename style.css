@@ -30,27 +30,30 @@
     overflow: hidden;        
   }
 
+nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5rem;
+}
 
-  nav {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 6rem;
-  }
+nav a {
+  font-size: 2rem;
+  color: #FB6F92;
+  text-decoration: none;
+  white-space: nowrap;
 
-  nav a {
-
-    font-size: 2rem;
-    color: #FB6F92;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: color 0.3s;
-  }
-
+  /* Button look */
+  padding: 0.4rem 1rem;
+  background-color: #FFB3C6;
+  border-radius: 1rem;       
+  transition: all 0.3s ease; 
+}
   nav a:hover {
     color: #FFE5EC;
+    background-color: #FB6F92;
   }
 
   /* clouds */
@@ -190,7 +193,7 @@
   .steps {
     display: flex;            
     justify-content: center;  
-    gap: 18rem;              
+    gap: 16rem;              
     flex-wrap: wrap;         
     margin: 0;                
     font-size: 2rem;   
@@ -276,10 +279,43 @@
 form {
   margin-top: 3rem;         
   padding: 2rem;           
-  width: 30rem;    
+  width: 50rem;    
   height: 40rem;          
   background-color: #FFB3C6; 
   border-radius: 20px;      
   margin-left: auto;         
   margin-right: auto;
 }
+
+#name-input {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  gap: 0.5rem;            
+}
+#name-input::placeholder {
+  color: #FB6F92;
+}
+
+#name-input input::-webkit-input-placeholder {
+  color: #FB6F92;
+}
+
+#name-input input {
+  padding: 0.5rem 1rem;      
+  border-radius: 2rem;        
+  background-color: #FFE5EC;  
+  border: 5px solid #FFE5EC;  
+  font-size: 1.5rem; 
+  font-family: "Jua", sans-serif;          
+  color: #FB6F92;        
+  outline: none;           
+  transition: all 0.3s ease;  
+}
+
+#name-input input:focus {
+  background-color: #FFF0F5;
+  border: 5px solid #FB6F92;  
+}
+
