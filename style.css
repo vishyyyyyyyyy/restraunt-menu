@@ -294,7 +294,7 @@ form {
 /* Common row for inputs */
 .food-inputs-row {
   display: flex;
-  gap: 1.5rem;             
+  gap: 2.2rem;             
   justify-content: center;  
   flex-wrap: wrap;          
   padding-top: 1.5rem;
@@ -364,14 +364,21 @@ form {
   width: 5rem;
   padding: 0.5rem 0.5rem;
   border-radius: 2rem;
-  border: 3px solid #FFE5EC;
+  border: 0.3rem solid #FFE5EC;
   background-color: #FFE5EC;
   font-family: "Jua", sans-serif;
+  font-size: 1rem;
+  text-align:center;
   color: #FB6F92;
   outline: none;
 }
+#dishes-input input[type="number"]:focus {
+  border: 0.3rem solid #FB6F92;
+  background-color: #FFF0F5;
+}
 
 .drinks-inputs-row {
+    padding-top: 1.2rem;
   display: flex;
   justify-content: center;
   gap: 3rem;    /* spacing between each drink option */
@@ -383,6 +390,8 @@ form {
   gap: 0.5rem;  /* space between radio and text */
   cursor: pointer;
 }
+
+
 
 input[type="radio"] {
   appearance: none;
@@ -406,11 +415,62 @@ input[type="radio"]:focus {
 /* Love level slider labels */
 #love-level-labels {
   display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
   margin-top: 0.5rem;
 }
 
+#smitten{
+  padding-left: 4rem;
+}
+/* Base slider */
+.heart-slider {
+  -webkit-appearance: none;
+  width: 92%;
+  height: 1.7rem;
+  background: #FFE5EC;
+  border-radius: 0.75rem;
+  outline: none;
+  margin: 1rem 0;
+}
+
+/* Track for Chrome/Safari */
+.heart-slider::-webkit-slider-runnable-track {
+  height: 1.5rem;
+  background: #FFE5EC;
+  border-radius: 0.75rem;
+}
+
+/* Track for Chrome/Safari */
+.heart-slider::-webkit-slider-runnable-track {
+  height: 1.5rem;
+  background: #FFE5EC;
+  border-radius: 0.75rem;
+}
+
+/* Thumb for Chrome/Safari */
+.heart-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3rem;
+  height: 3rem;
+  background: url('heart.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  margin-top: -0.7rem; /* center thumb on track */
+  border: none;
+}
+
+/* Thumb for Firefox */
+.heart-slider::-moz-range-thumb {
+  width: 3rem;
+  height: 3rem;
+  background: url('heart.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+}
 /* Special Requests */
 #special-requests-input textarea {
   width: 90%;
