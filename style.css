@@ -294,7 +294,7 @@ form {
 /* Common row for inputs */
 .food-inputs-row {
   display: flex;
-  gap: 2.2rem;             
+  gap: 2.5rem;             
   justify-content: center;  
   flex-wrap: wrap;          
   padding-top: 1.5rem;
@@ -319,7 +319,7 @@ form {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   background-color: #FFE5EC;
-  border: 5px solid #FFE5EC;
+  border: 0.6rem solid #FFE5EC;
   font-size: 1.5rem;
   font-family: "Jua", sans-serif;
   color: #FB6F92;
@@ -337,7 +337,7 @@ form {
 
 #name-input input:focus {
   background-color: #FFF0F5;
-  border: 5px solid #FB6F92;
+  border: 0.6rem solid #FB6F92;
 }
 
 /* Section headers */
@@ -417,7 +417,7 @@ input[type="radio"]:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 9rem;
+  gap: 8rem;
   margin-top: 0.5rem;
 }
 /* push smitten more right */
@@ -480,9 +480,9 @@ input[type="radio"]:focus {
 /* Special Requests */
 #special-requests-input textarea {
   width: 90%;
-  min-height: 6rem;          /* flexible height */
+  min-height: 7rem;          /* flexible height */
   border-radius: 1.5rem;
-  border: 3px solid #FFE5EC;
+  border: 0.6rem solid #FFE5EC;
   background-color: #FFE5EC;
   padding: 1rem;
   color: #FB6F92;
@@ -491,9 +491,30 @@ input[type="radio"]:focus {
   outline: none;
 }
 
+#special-requests-input textarea::placeholder {
+  font-display: left;
+  color: #FB6F92;
+  opacity: 0.6;
+  text-align: left;
+}
+
+#special-requests-input textarea:focus {
+  background-color: #FFF0F5;
+  border: 0.6rem solid #FB6F92;
+}
+
+#text-area-padding{
+  padding-top: 1.5rem;
+}
 /* Submit button */
+
+#checkout-button{
+  justify-content: center;
+  align-items: center;
+}
 form input[type="submit"] {
   margin-top: 1.5rem;
+  width: 20rem;
   padding: 0.8rem 2rem;
   border-radius: 2rem;
   background-color: #FB6F92;
