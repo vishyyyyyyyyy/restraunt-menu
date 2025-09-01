@@ -87,24 +87,25 @@
             <h2 id="order-form">Place Your Order</h2> 
             <form>
                 <!-- Name -->
-                <div id="name-input">
-                <label>Name: <input type="text" placeholder="Enter your name" minlength="1"></label>
+                <div id="name-input" class="input-padding">
+                <label><h3>Name:</h3><input type="text" placeholder="Enter your name" minlength="1"></label>
                 </div>
 
                 <!-- Dishes -->
-                <div id="dishes-input">
-                <h2>Dishes</h2>
-                <h3>Enter the number of love-filled dishes you will share:</h3>
+                <div id="dishes-input" class="input-padding">
+                <h3>Dishes</h3>
+                <p>enter the number of love-filled dishes you will share:</p>
                 <div class="inputs-row">
-                    <label>Pasta Amor <input type="number" name="food1" min="0"></label>
-                    <label>Love Burger <input type="number" name="food2" min="0"></label>
-                    <label>Besito Taco <input type="number" name="food3" min="0"></label>
+                    <label>Pasta Amor <input type="number" name="food1" min="0" max ="100"></label>
+                    <label>Love Burger <input type="number" name="food2" min="0" max ="100"></label>
+                    <label>Besito Taco <input type="number" name="food3" min="0" max ="100"></label>
                 </div>
                 </div>
 
                 <!-- Drinks -->
-                <div id="drinks-input">
-                <h2>Drinks</h2>
+                <div id="drinks-input" class = "input-padding   ">
+                <h3>Drinks</h3>
+                <p>pick your potion of love</p>
                 <div class="inputs-row">
                     <label>Sweetheart Soda <input type="checkbox" name="drink" value="drink1"></label>
                     <label>Sparkling Crush <input type="checkbox" name="drink" value="drink2"></label>
@@ -113,20 +114,20 @@
                 </div>
 
                 <!-- Love Level -->
-                <div id="love-level-input">
-                <h2>Love Level</h2>
-                <h3>Choose your dose of delicious affection:</h3>
+                <div id="love-level-input" class = "input-padding">
+                <h3>Love Level</h3>
+                <p>choose your dose of delicious affection:</p>
                 <input type="range" name="love-level" min="1" max="10">
                 <div id="love-level-labels">
-                    <h5>Puppy Eyes</h5>
-                    <h5>Smitten</h5>
-                    <h5>Head Over Heels</h5>
+                    <p>Puppy Eyes</p>
+                    <p>Smitten</p>
+                    <p>Head Over Heels</p>
                 </div>
                 </div>
 
                 <!-- Special Requests -->
-                <div id="special-requests-input">
-                <h2>Special Requests</h2>
+                <div id="special-requests-input" class = "input-padding">
+                <h3>Special Requests</h3>
                 <textarea placeholder="Anything else you'd like to add?"></textarea>
                 </div>
 
