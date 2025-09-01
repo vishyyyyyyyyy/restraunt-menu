@@ -6,7 +6,7 @@ const startX = 0;
 const startY = 0;
 
 // End coordinates in viewport units
-const endX = window.innerWidth * 0.67; //using screen width heights not px
+const endX = window.innerWidth * 0.68; //using screen width heights not px
 const endY = window.innerHeight * 1.24;
 
 function updateArrow(progress) {

@@ -315,6 +315,7 @@ form {
 }
 
 #name-input input {
+  margin-top: 1rem;
   width: 30rem;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -508,27 +509,52 @@ input[type="radio"]:focus {
 }
 /* Submit button */
 
-#checkout-button{
-  justify-content: center;
-  align-items: center;
+#checkout-button {
+  display: flex;          
+  justify-content: center; 
+  align-items: center;        
+  padding-bottom:1rem;  
 }
+
 form input[type="submit"] {
+  font-family: "Jua", sans-serif;
   margin-top: 1.5rem;
   width: 20rem;
   padding: 0.8rem 2rem;
   border-radius: 2rem;
   background-color: #FB6F92;
   color: #FFE5EC;
+  border: 0.2rem solid  #FB6F92;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 form input[type="submit"]:hover {
-  background-color: #FFB3C6;
-  color: #FB6F92;
+   transform: scale(1.1);
 }
 
 .input-padding {
-  padding: 1rem;
+  padding: 1.5rem;
+}
+footer{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a{
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-family: "Jua", sans-serif;
+  font-size: 1rem;
+  color: #FB6F92;
+
+}
+
+#github-logo{
+  width: 2rem;
+  height: 2rem;
+
 }
