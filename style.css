@@ -1,274 +1,274 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  body {
-    font-family: "jua", sans-serif;
-    background-color: #FFCCD8;
+    body {
+      font-family: "jua", sans-serif;
+      background-color: #FFCCD8;
 
-    color: #FB6F92;
-  }
-  /* HEADER */
-  #arrow {
+      color: #FB6F92;
+    }
+    /* HEADER */
+    #arrow {
+      position: absolute;
+      width: 15%;
+      height: auto;
+      top: 3.5%;   
+      left: 8%;  
+      z-index: 2;
+      transition: transform 0.1s linear;
+    }
+
+
+    /* Header full-screen */
+    header {
+      position: relative;
+      height: 100vh;/* full viewport height */
+      width: 100%;
+      overflow: hidden;        
+    }
+
+  nav {
     position: absolute;
-    width: 15%;
-    height: auto;
-    top: 3.5%;   
-    left: 8%;  
-    z-index: 2;
-    transition: transform 0.1s linear;
-  }
-
-
-  /* Header full-screen */
-  header {
-    position: relative;
-    height: 100vh;/* full viewport height */
-    width: 100%;
-    overflow: hidden;        
-  }
-
-nav {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 5rem;
-}
-
-nav a {
-  font-size: 2rem;
-  color: #FB6F92;
-  text-decoration: none;
-  white-space: nowrap;
-
-  /* Button look */
-  padding: 0.4rem 1rem;
-  background-color: #FFB3C6;
-  border-radius: 1rem;       
-  transition: all 0.3s ease; 
-}
-  nav a:hover {
-    color: #FFE5EC;
-    background-color: #FB6F92;
-  }
-
-  /* clouds */
-  .cloud {
-    position: absolute;
-    width: 17%;
-    height: auto;
-  }
-
-
-  #cloud2 {
-    top: 75%;
-    right: 7%;
-  }
-
-  #cloud3 {
-    bottom: 10%;
-    left: 9%;
-  }
-
-  #cloud4 {
-    top: 30%;
-    left: 55%;
-  }
-
-  #cloud5 {
-    top: 15% ;
-    left: 1%;
-  }
-
-  #cloud6 {
-    top: 2%;
-    left: 82%;
-  }
-
-  /* hearts */
-  .heart {
-    position: absolute;
-    width: 5%;
-    height: auto;
-  }
-
-  .heart:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s;
-  }
-
-  #heart1 {
-    top: 55%;
-    right: 5%;
-  }
-
-  #heart2 {
-    bottom: 2%;
-    left: 9%;
-  }
-
-  #heart3 {
-    top: 33%;
-    left: 47%;
-  }
-
-  #heart4 {
-    top: 45%;
-    left: 4%;
-  }
-
-  #heart5 {
-    top: 20%;
-    left: 75%
-  }
-
-  #heart6 {
-    bottom: 14%;
-    left: 60%;
-  }
-
-  #heart7 {
-    top: 10%;
-    left: 25%;
-  }
-
-
-  #header-img {
-    position: absolute;
-    width: 15%;
-    height: auto;
-    top: 15%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-
-  /* Main title centered */
-  h1 {
-    position: absolute;
-    white-space: nowrap;
-    top: 50%;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Jua", sans-serif;
-    font-size: 7rem;
-    font-weight: 400;
-    color: #FFCCD8;
-    text-align: center;
-    text-shadow: 0 0 0.3em #ff527d, 0 0 0.6em #ff527d;
-    z-index: 3;  
-  }
-
-  /* Tagline below h1 */
-  #tagline {
-    position: absolute;
-    top: 57%; 
-    left: 50%;
-    font-family: "jua", sans-serif;
     transform: translateX(-50%);
-    font-weight: 300;
+    display: flex;
+    gap: 5rem;
+  }
+
+  nav a {
     font-size: 2rem;
     color: #FB6F92;
-    text-align: center;
-    z-index: 1;
+    text-decoration: none;
+    white-space: nowrap;
+
+    /* Button look */
+    padding: 0.4rem 1rem;
+    background-color: #FFB3C6;
+    border-radius: 1rem;       
+    transition: all 0.3s ease; 
   }
+    nav a:hover {
+      color: #FFE5EC;
+      background-color: #FB6F92;
+    }
 
-
-/* HOW TO SECTION*/
-  #guide {
-    padding-top: 10rem;
-    font-size: 3rem;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 4;
-
-  }
-
-  .steps {
-    display: flex;            
-    justify-content: center;  
-    gap: 16rem;              
-    flex-wrap: wrap;         
-    margin: 0;                
-    font-size: 2rem;   
-  }
-
-
-  #how-it-works {
-      width: 90%;
+    /* clouds */
+    .cloud {
+      position: absolute;
+      width: 17%;
       height: auto;
     }
 
-  .food-section {
-  padding-top: 10rem;
-}
 
-/* MENU */
-#menu {
-  padding-top: 4rem;
-  font-size: 5rem;
-  text-align: center;
-  padding-bottom: 2rem;
-}
+    #cloud2 {
+      top: 75%;
+      right: 7%;
+    }
 
-.food-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding-top: 1rem;
-}
+    #cloud3 {
+      bottom: 10%;
+      left: 9%;
+    }
 
-.food-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #FFB3C6;
-  padding: 1rem;
-  border-radius: 20px;
-  width: 20em;    
-  height: 25em;   
-  transition: transform 0.3s, background-color 0.3s, border 0.3s;
-}
+    #cloud4 {
+      top: 30%;
+      left: 55%;
+    }
 
-.food-item:hover {
-  background-color: #FFD7E2;
-  border: 10px solid #FE84A2;
-}
+    #cloud5 {
+      top: 15% ;
+      left: 1%;
+    }
 
-.food {
-  width: 95%;
-  height: auto;
-  margin-bottom: 1rem;
-}
+    #cloud6 {
+      top: 2%;
+      left: 82%;
+    }
 
-.food-item h3 {
-  font-size: 2rem;
-  color: #FB6F92;
-  margin: 0.5rem 0 0.3rem 0;
-}
+    /* hearts */
+    .heart {
+      position: absolute;
+      width: 5%;
+      height: auto;
+    }
 
-.food-item p {
-  padding-top: 2rem;
-  font-size: 1.2rem;
-  color: #FB6F92;
-}
+    .heart:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s;
+    }
 
-.food-item em {
-   display: block;  
-  padding-top: 1rem;
-}
+    #heart1 {
+      top: 55%;
+      right: 5%;
+    }
+
+    #heart2 {
+      bottom: 2%;
+      left: 9%;
+    }
+
+    #heart3 {
+      top: 33%;
+      left: 47%;
+    }
+
+    #heart4 {
+      top: 45%;
+      left: 4%;
+    }
+
+    #heart5 {
+      top: 20%;
+      left: 75%
+    }
+
+    #heart6 {
+      bottom: 14%;
+      left: 60%;
+    }
+
+    #heart7 {
+      top: 10%;
+      left: 25%;
+    }
+
+
+    #header-img {
+      position: absolute;
+      width: 15%;
+      height: auto;
+      top: 15%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    /* Main title centered */
+    h1 {
+      position: absolute;
+      white-space: nowrap;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Jua", sans-serif;
+      font-size: 7rem;
+      font-weight: 400;
+      color: #FFCCD8;
+      text-align: center;
+      text-shadow: 0 0 0.3em #ff527d, 0 0 0.6em #ff527d;
+      z-index: 3;  
+    }
+
+    /* Tagline below h1 */
+    #tagline {
+      position: absolute;
+      top: 57%; 
+      left: 50%;
+      font-family: "jua", sans-serif;
+      transform: translateX(-50%);
+      font-weight: 300;
+      font-size: 2rem;
+      color: #FB6F92;
+      text-align: center;
+      z-index: 1;
+    }
+
+
+  /* HOW TO SECTION*/
+    #guide {
+      padding-top: 10rem;
+      font-size: 3rem;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 4;
+
+    }
+
+    .steps {
+      display: flex;            
+      justify-content: center;  
+      gap: 16rem;              
+      flex-wrap: wrap;         
+      margin: 0;                
+      font-size: 2rem;   
+    }
+
+
+    #how-it-works {
+        width: 90%;
+        height: auto;
+      }
+
+    .food-section {
+    padding-top: 10rem;
+  }
+
+  /* MENU */
+  #menu {
+    padding-top: 4rem;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .food-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+
+  .food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFB3C6;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 20em;    
+    height: 25em;   
+    transition: transform 0.3s, background-color 0.3s, border 0.3s;
+  }
+
+  .food-item:hover {
+    background-color: #FFD7E2;
+    border: 10px solid #FE84A2;
+  }
+
+  .food {
+    width: 95%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .food-item h3 {
+    font-size: 2rem;
+    color: #FB6F92;
+    margin: 0.5rem 0 0.3rem 0;
+  }
+
+  .food-item p {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: #FB6F92;
+  }
+
+  .food-item em {
+    display: block;  
+    padding-top: 1rem;
+  }
+
 
 /* ORDER SECTION*/
-
 #order-section {
   padding-top: 5rem; 
   text-align: center;
@@ -276,19 +276,16 @@ nav a {
 
 #order-form {
   padding-top: 2rem;
-  margin-top: 5rem;
   font-size: 4rem;  
 }
 
 form {
-  margin-top: 3rem;         
+  margin: 3rem auto 0;       
   padding: 2rem;           
-  width: 50rem;    
-  height: 60rem;          
+  width: 50rem;               
+  max-width: 90%;             
   background-color: #FFB3C6; 
   border-radius: 20px;      
-  margin-left: auto;         
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -301,6 +298,7 @@ form {
   justify-content: center;  
   flex-wrap: wrap;          
   padding-top: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* Name input */
@@ -336,19 +334,25 @@ form {
   border: 5px solid #FB6F92;
 }
 
-#dishes-input h3, #drinks-input h3, #special-requests-input h3, #love-level-input h3, #name-input h3 {
+/* Section headers */
+#dishes-input h3, 
+#drinks-input h3, 
+#special-requests-input h3, 
+#love-level-input h3, 
+#name-input h3 {
   font-size: 3rem;
 }
 
-#dishes-input p, #drinks-input p {
+#dishes-input p, 
+#drinks-input p {
   font-size: 1.5rem;
 }
 
-#dishes-input label{
-  font-size: 1.2rem;
-  color: #FB6F92;
+#dishes-input label, #drinks-input label {
+  font-size: 1.5rem;
 }
-/* Dishes and drinks inputs */
+
+/* Inputs */
 #dishes-input input[type="number"],
 #drinks-input input[type="checkbox"] {
   width: 5rem;
@@ -372,7 +376,7 @@ form {
 /* Special Requests */
 #special-requests-input textarea {
   width: 90%;
-  height: 6rem;
+  min-height: 6rem;          /* flexible height */
   border-radius: 1.5rem;
   border: 3px solid #FFE5EC;
   background-color: #FFE5EC;
@@ -388,7 +392,6 @@ form input[type="submit"] {
   margin-top: 1.5rem;
   padding: 0.8rem 2rem;
   border-radius: 2rem;
-  border: none;
   background-color: #FB6F92;
   color: #FFE5EC;
   font-size: 1.2rem;
@@ -401,6 +404,6 @@ form input[type="submit"]:hover {
   color: #FB6F92;
 }
 
-.input-padding{
+.input-padding {
   padding: 1rem;
 }
