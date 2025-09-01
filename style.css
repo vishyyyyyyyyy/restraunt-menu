@@ -378,7 +378,7 @@ form {
 }
 
 .drinks-inputs-row {
-    padding-top: 1.2rem;
+    padding-top: 1.5rem;
   display: flex;
   justify-content: center;
   gap: 3rem;    /* spacing between each drink option */
@@ -420,10 +420,16 @@ input[type="radio"]:focus {
   gap: 9rem;
   margin-top: 0.5rem;
 }
-
+/* push smitten more right */
 #smitten{
   padding-left: 4rem;
 }
+
+/* Love level slider container */
+#love-level-slider-container {
+ padding-top: 1rem;
+}
+
 /* Base slider */
 .heart-slider {
   -webkit-appearance: none;
