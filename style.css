@@ -282,7 +282,7 @@
 form {
   margin: 3rem auto 0;       
   padding: 2rem;           
-  width: 50rem;               
+  width: 55rem;               
   max-width: 90%;             
   background-color: #FFB3C6; 
   border-radius: 20px;      
@@ -292,7 +292,7 @@ form {
 }
 
 /* Common row for inputs */
-.inputs-row {
+.food-inputs-row {
   display: flex;
   gap: 1.5rem;             
   justify-content: center;  
@@ -300,6 +300,9 @@ form {
   padding-top: 1.5rem;
   font-size: 1.2rem;
 }
+
+
+
 
 /* Name input */
 #name-input {
@@ -322,11 +325,14 @@ form {
   color: #FB6F92;
   outline: none;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 #name-input input::placeholder {
+  font-display: center;
   color: #FB6F92;
   opacity: 0.6;
+  text-align: center;
 }
 
 #name-input input:focus {
@@ -344,8 +350,9 @@ form {
 }
 
 #dishes-input p, 
-#drinks-input p {
-  font-size: 1.5rem;
+#drinks-input p,
+#love-level-input p {
+  font-size: 1.6rem;
 }
 
 #dishes-input label, #drinks-input label {
@@ -353,10 +360,9 @@ form {
 }
 
 /* Inputs */
-#dishes-input input[type="number"],
-#drinks-input input[type="checkbox"] {
+#dishes-input input[type="number"]{
   width: 5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 2rem;
   border: 3px solid #FFE5EC;
   background-color: #FFE5EC;
@@ -364,6 +370,38 @@ form {
   color: #FB6F92;
   outline: none;
 }
+
+.drinks-inputs-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;    /* spacing between each drink option */
+}
+
+.drinks-inputs-row label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;  /* space between radio and text */
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #FB6F92;
+  background-color: #FFE5EC;
+  cursor: pointer;
+}
+
+
+input[type="radio"]:focus {
+  border: 0.2rem solid #FFF0F5;
+  background-color: #FB6F92;
+}
+
+
+
 
 /* Love level slider labels */
 #love-level-labels {
