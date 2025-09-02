@@ -534,7 +534,7 @@ input[type="radio"]:focus {
   padding-bottom:1rem;  
 }
 
-form input[type="submit"] {
+form input[type="button"] {
   font-family: "Jua", sans-serif;
   margin-top: 1.5rem;
   width: 20rem;
@@ -548,7 +548,7 @@ form input[type="submit"] {
   transition: all 0.3s ease;
 }
 
-form input[type="submit"]:hover {
+form input[type="button"]:hover {
    transform: scale(1.1);
 }
 
