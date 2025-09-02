@@ -439,9 +439,8 @@ input[type="radio"]:focus {
 
 /* Love level slider labels */
 #love-level-labels {
-    display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8rem;
   margin-top: 0.5rem;
@@ -717,5 +716,19 @@ footer a{
     width: 95%;      /* almost full width on mobile */
     max-width: none; /* remove desktop max-width limit */
     font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #love-level-labels {
+    font-size: 0.8rem;  
+    flex-direction: row; 
+    gap: 2rem;           
+    justify-content: space-between; 
+  }
+
+  #smitten {
+    padding-left: 0; /* remove extra padding on mobile */
   }
 }
