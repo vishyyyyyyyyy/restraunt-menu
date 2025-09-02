@@ -25,3 +25,9 @@ guideBtn.addEventListener("click", () => {
     updateArrow(1); // Move arrow to end point
     arrow.style.display = "block";
 });
+
+
+
+
+
+

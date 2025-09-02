@@ -577,3 +577,52 @@ footer a{
   height: 2rem;
 
 }
+
+
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem; /* shrink title */
+  }
+  
+  #tagline {
+    font-size: 1.5rem; 
+  }
+
+  nav {
+    gap: 2rem; /* shrink nav spacing */
+  }
+
+  .steps {
+    gap: 4rem; /* shrink gap between steps */
+    font-size: 1.5rem;
+  }
+
+  .food-item {
+    width: 90%; /* stack menu items vertically */
+    height: auto; 
+    padding: 0.8rem;
+  }
+
+  form {
+    width: 90%; /* shrink form on small screens */
+    padding: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .food-inputs-row, .drinks-inputs-row {
+    gap: 1rem; /* reduce gaps for smaller screens */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #love-level-labels {
+    gap: 2rem; /* shrink slider label spacing */
+  }
+
+  #checkout-button input[type="button"] {
+    width: 16rem; /* shrink button */
+    font-size: 1rem;
+  }
+}
