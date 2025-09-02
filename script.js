@@ -5,9 +5,21 @@ const guideBtn = document.getElementById("guidebutton");
 const startX = 0;
 const startY = 0;
 
-// End coordinates in viewport units
-const endX = window.innerWidth * 0.68; //using screen width heights not px
-const endY = window.innerHeight * 1.24;
+let endX, endY;
+
+function setEndCoordinates() {
+    if (window.innerWidth <= 600) {
+        // Mobile adjustments
+        endX = window.innerWidth * 0.6;  // tweak these for mobile
+        endY = window.innerHeight * 1.1;
+    } else {
+        // Desktop
+        endX = window.innerWidth * 0.68;
+        endY = window.innerHeight * 1.24;
+    }
+}
+
+setEndCoordinates(); // initial calculation
 
 function updateArrow(progress) {
     const x = startX + (endX - startX) * progress;
@@ -26,8 +38,5 @@ guideBtn.addEventListener("click", () => {
     arrow.style.display = "block";
 });
 
-
-
-
-
-
+// Recalculate if the window is resized
+window.addEventListener("resize", setEndCoordinates);
