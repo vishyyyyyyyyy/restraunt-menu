@@ -580,49 +580,60 @@ footer a{
 
 
 
-/* Mobile tweaks */
+/* Mobile adjustments */
 @media (max-width: 768px) {
+  /* Make main title and tagline a bit smaller */
   h1 {
-    font-size: 4rem; /* shrink title */
+    font-size: 4rem;
   }
-  
+
   #tagline {
-    font-size: 1.5rem; 
-  }
-
-  nav {
-    gap: 2rem; /* shrink nav spacing */
-  }
-
-  .steps {
-    gap: 4rem; /* shrink gap between steps */
     font-size: 1.5rem;
   }
 
+  /* Guide section */
+  #guide {
+    font-size: 2rem;
+  }
+
+  .steps {
+    gap: 2rem; /* smaller gaps between steps */
+    font-size: 1.5rem;
+  }
+
+  /* Menu section */
   .food-item {
-    width: 90%; /* stack menu items vertically */
-    height: auto; 
-    padding: 0.8rem;
+    width: 90%; /* full width on mobile */
+    height: auto;
+    padding: 1rem;
   }
 
+  .food-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .food-item p {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  /* Form adjustments */
   form {
-    width: 90%; /* shrink form on small screens */
+    width: 90%; /* form fits mobile screen */
     padding: 1.5rem;
-    font-size: 2.5rem;
   }
 
-  .food-inputs-row, .drinks-inputs-row {
-    gap: 1rem; /* reduce gaps for smaller screens */
-    flex-direction: column;
-    align-items: center;
+  #name-input input,
+  #dishes-input input[type="number"] {
+    width: 80%;
+  }
+
+  .drinks-inputs-row {
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 
   #love-level-labels {
-    gap: 2rem; /* shrink slider label spacing */
-  }
-
-  #checkout-button input[type="button"] {
-    width: 16rem; /* shrink button */
-    font-size: 1rem;
+    gap: 2rem;
   }
 }
