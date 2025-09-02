@@ -13,7 +13,7 @@ This website was inspired by a scene in Descendant's, where Mal enchants cookies
 - Order section with number, radio, slider text area inputs and a submit button 
 - Animated buttons with hover effects  
 - Fun checkout process that links to YouTube song 
-- Responsive design (works on mobile & desktop)  
+- currently only works on desktop
 
 
 🛠 Built With:
@@ -24,6 +24,7 @@ This website was inspired by a scene in Descendant's, where Mal enchants cookies
 
 
 🔮 Future Ideas:
+- Add mobile responsiveness
 - Add more dessert options  
 - Connect to an actual checkout/cart system  
 - Dark mode 🌙  
