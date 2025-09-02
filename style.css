@@ -193,6 +193,8 @@ main {
 
   /* HOW TO SECTION*/
     #guide {
+      margin: 0;
+      text-align: center;
        position: relative;
       padding-top: 10rem;
       font-size: 3rem;
@@ -200,6 +202,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       z-index: 4;
 
     }
@@ -210,7 +213,8 @@ main {
       gap: 16rem;              
       flex-wrap: wrap;         
       margin: 0;                
-      font-size: 2rem;   
+      font-size: 2rem;  
+      flex-direction: row; 
     }
 
 
@@ -335,7 +339,8 @@ form {
 
 #name-input input {
   margin-top: 1rem;
-  width: 30rem;
+  max-width:30rem;
+  width: 80%;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   background-color: #FFE5EC;
@@ -580,6 +585,28 @@ footer a{
 }
 
 
+
+
+
+
+@media (max-width: 600px) {
+  .cloud {
+    width: 20%; 
+  }
+  #cloud2 { top: 65%; right: 3%; }
+  #cloud3 { bottom: 5%; left: 5%; }
+  #cloud4 { top: 25%; left: 50%; }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    white-space: normal; 
+    text-align: center;
+  }
+}
+
+
 @media (max-width: 600px) {
   body {
     font-size: 14px; /* shrink base font */
@@ -619,7 +646,13 @@ footer a{
     width: 8%;
   }
 }
-  
+  @media (max-width: 600px) {
+  .steps {
+    gap: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
 
 @media (max-width: 600px) {
   #order-form {
@@ -630,6 +663,14 @@ footer a{
     flex-direction: column; /* stack label + input */
     font-size: 1.2rem;
   }
+
+  
+  #name-input input {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+  
+
 
   .food-inputs-row {
     flex-direction: column;
