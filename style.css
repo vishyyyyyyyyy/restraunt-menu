@@ -713,7 +713,7 @@ footer a{
 
 @media (max-width: 600px) {
   #name-input input {
-    width: 95%;      /* almost full width on mobile */
+    width: 80%;      /* almost full width on mobile */
     max-width: none; /* remove desktop max-width limit */
     font-size: 1.2rem;
   }
