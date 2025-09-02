@@ -1,29 +1,22 @@
 const arrow = document.getElementById("arrow");
 const guideBtn = document.getElementById("guidebutton");
 
-// Arrow start coordinates
+// Arrow start coordinates (0,0)
 const startX = 0;
 const startY = 0;
 
-let endX, endY;
+// End coordinates as percentage of viewport
+let endXPercent = window.innerWidth <= 600 ? 60 : 68; // % of width
+let endYPercent = window.innerWidth <= 600 ? 110 : 124; // % of height
 
-function setEndCoordinates() {
-    if (window.innerWidth <= 600) {
-        // Mobile adjustments
-        endX = window.innerWidth * 0.6;  // tweak these for mobile
-        endY = window.innerHeight * 1.1;
-    } else {
-        // Desktop
-        endX = window.innerWidth * 0.68;
-        endY = window.innerHeight * 1.24;
-    }
+function updateEndCoordinates() {
+    endXPercent = window.innerWidth <= 600 ? 60 : 68;
+    endYPercent = window.innerWidth <= 600 ? 110 : 124;
 }
 
-setEndCoordinates(); // initial calculation
-
 function updateArrow(progress) {
-    const x = startX + (endX - startX) * progress;
-    const y = startY + (endY - startY) * progress;
+    const x = (endXPercent * window.innerWidth / 100) * progress;
+    const y = (endYPercent * window.innerHeight / 100) * progress;
     arrow.style.transform = `translate(${x}px, ${y}px)`;
 }
 
@@ -38,5 +31,5 @@ guideBtn.addEventListener("click", () => {
     arrow.style.display = "block";
 });
 
-// Recalculate if the window is resized
-window.addEventListener("resize", setEndCoordinates);
+// Recalculate percentages if window is resized
+window.addEventListener("resize", updateEndCoordinates);
