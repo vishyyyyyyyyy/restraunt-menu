@@ -335,12 +335,13 @@ form {
   gap: 0.2rem;
   font-size: 2rem;
   padding-bottom: 1rem;
+  width: 100%;     
+  max-width: 60rem;  
 }
 
 #name-input input {
-  margin-top: 1rem;
-  max-width:30rem;
-  width: 80%;
+  flex: 1;          
+  min-width: 25rem;  
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   background-color: #FFE5EC;
@@ -349,7 +350,6 @@ form {
   font-family: "Jua", sans-serif;
   color: #FB6F92;
   outline: none;
-  transition: all 0.3s ease;
   text-align: center;
 }
 
@@ -439,8 +439,9 @@ input[type="radio"]:focus {
 
 /* Love level slider labels */
 #love-level-labels {
-  display: flex;
-  justify-content: center;
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8rem;
   margin-top: 0.5rem;
@@ -591,12 +592,16 @@ footer a{
 
 @media (max-width: 600px) {
   .cloud {
-    width: 20%; 
+    width: 25vw; /* always proportional to screen width */
   }
-  #cloud2 { top: 65%; right: 3%; }
-  #cloud3 { bottom: 5%; left: 5%; }
-  #cloud4 { top: 25%; left: 50%; }
+
+  #cloud2 { top: 70vh; right: 5vw; }
+  #cloud3 { bottom: 8vh; left: 5vw; }
+  #cloud4 { top: 28vh; left: 48vw; }
+  #cloud5 { top: 12vh; left: 2vw; }
+  #cloud6 { top: 5vh; left: 75vw; }
 }
+
 
 @media (max-width: 600px) {
   h1 {
@@ -703,5 +708,14 @@ footer a{
 
   .food-item p {
     font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #name-input input {
+    width: 95%;      /* almost full width on mobile */
+    max-width: none; /* remove desktop max-width limit */
+    font-size: 1.2rem;
   }
 }
