@@ -191,6 +191,12 @@ main {
 }
 
 
+
+
+
+
+
+
   /* HOW TO SECTION*/
     #guide {
       margin: 0;
@@ -620,8 +626,14 @@ footer a{
     margin-top: 25vh; /* same as header height */
   }
 
+  /* Optional: adjust clouds and hearts for mobile */
+  .cloud {
+    width: 30%;
+  }
 
-
+  .heart {
+    width: 8%;
+  }
 }
 
 
@@ -638,6 +650,14 @@ footer a{
   #cloud6 { top: 5vh; left: 75vw; }
 }
 
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    white-space: normal; 
+    text-align: center;
+  }
+}
 
 
 @media (max-width: 600px) {
@@ -660,18 +680,30 @@ footer a{
     font-size: 3rem;
   }
 
+  #tagline {
+    font-size: 1rem;
+    top: 60%; /* bump lower so it doesn’t overlap */
+  }
+
+
+
 
   .heart {
     width: 8%;
   }
 }
+@media (max-width: 600px) {
+  #arrow { width: 25%; }
+  .bow { width: 25%; } /* scale proportionally with arrow */
+}
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
   .steps {
     gap: 2rem;
     font-size: 1.2rem;
   }
 }
+
 
 
 @media (max-width: 600px) {
