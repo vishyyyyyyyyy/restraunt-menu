@@ -586,6 +586,43 @@ footer a{
 
 
 
+@media (max-width: 600px) {
+  /* Shrink header to top section */
+  header {
+    height: 25vh; /* only take top quarter of the screen */
+    overflow: visible; /* allow clouds/hearts to overflow if needed */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: normal;
+    text-align: center;
+  }
+
+  #tagline {
+    font-size: 1rem;
+    top: 65%; /* adjust relative to new header height */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #arrow {
+    top: 12%; /* adjust arrow starting position for smaller header */
+    left: 5%;
+    width: 20%;
+  }
+
+  /* Push main content down so it doesn't overlap header */
+  main {
+    margin-top: 25vh; /* same as header height */
+  }
+
+
+
+}
 
 
 
@@ -601,14 +638,6 @@ footer a{
   #cloud6 { top: 5vh; left: 75vw; }
 }
 
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 3rem;
-    white-space: normal; 
-    text-align: center;
-  }
-}
 
 
 @media (max-width: 600px) {
@@ -631,25 +660,12 @@ footer a{
     font-size: 3rem;
   }
 
-  #tagline {
-    font-size: 1rem;
-    top: 60%; /* bump lower so it doesn’t overlap */
-  }
-
-  #arrow {
-    width: 25%; /* larger target on small screens */
-    top: 8%;
-    left: 5%;
-  }
-
-  .cloud {
-    width: 30%; /* shrink clouds proportionally */
-  }
 
   .heart {
     width: 8%;
   }
 }
+
   @media (max-width: 600px) {
   .steps {
     gap: 2rem;
