@@ -650,7 +650,12 @@ footer a{
 
 
 @media (max-width: 600px) {
-  #arrow { width: 25%; }
+  #arrow {
+    width: 25%;  
+    top: 12%;     
+    left: 20%;    
+  }
+
   .bow { width: 25%; } /* scale proportionally with arrow */
 }
 
