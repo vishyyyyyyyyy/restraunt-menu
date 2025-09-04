@@ -1,11 +1,11 @@
 const arrow = document.getElementById("arrow");
 const guideBtn = document.getElementById("guidebutton");
 
-// Arrow start coordinates (keep your perfect start)
+// Arrow start coordinates 
 const startX = 0;
 const startY = 0;
 
-// End coordinates (keep your perfect endpoint)
+// End coordinates 
 let endX = window.innerWidth * 0.68;
 let endY = window.innerHeight * 1.24;
 
@@ -25,7 +25,7 @@ function updateArrow(progress) {
 // Scroll-based movement
 window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
-    // progress = 0 at top, 1 at the point you want
+    // progress = 0 at top, 1 
     const scrollProgress = Math.min(Math.max(scrollTop / 500, 0), 1);
     updateArrow(scrollProgress);
 });

@@ -15,8 +15,8 @@
       position: absolute;
       width: 15%;
       height: auto;
-      top: 5%;   
-      left: 6%;  
+      top: 3.5%;   
+      left: 8%;  
       z-index: 5;
       transition: transform 0.1s linear;
     }
@@ -630,8 +630,13 @@ footer a{
   /* Arrow */
   #arrow {
     width: 20%;   
+    top: 5%;
+    left: 8%;
   }
-  .bow { width: 25%; }
+  #header-img{ 
+    width: 20%; 
+    
+  }
 
   /* Hearts */
   .heart {
