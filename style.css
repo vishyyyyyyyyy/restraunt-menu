@@ -15,8 +15,8 @@
       position: absolute;
       width: 15%;
       height: auto;
-      top: 3.5%;   
-      left: 8%;  
+      top: 5%;   
+      left: 6%;  
       z-index: 5;
       transition: transform 0.1s linear;
     }
@@ -644,11 +644,18 @@ footer a{
     }
 
   /* How-to section */
+
+  #guide{
+    font-size: 2rem;
+  }
   .steps {
-    gap: 2rem;
-    font-size: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 50%;
   }
 
+  
   /* Order form */
   #order-form {
     font-size: 2rem; /* shrink heading */
@@ -682,6 +689,9 @@ footer a{
   }
 
   /* Food items */
+  #menu{
+    font-size: 3rem;
+  }
   .food-item {
     width: 100%;
     max-width: 16rem;
